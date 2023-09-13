@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+#chatting {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#chatting h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-bottom: solid 2px #516e7f;
+  font-size: 20px;
+}
+
+#content {
+  font-family: "SUITE-Regular";
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#chat {
+  font-family: "SUITE-Regular";
+}
+
+#chat .word {
+  font-family: "SUITE-Regular";
+  font-size: 15px;
+  width: 692px;
+  height: 30px;
+}
+
+#chat .button {
+  font-family: "SUITE-Regular";
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+}
