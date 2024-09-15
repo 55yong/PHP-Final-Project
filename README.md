@@ -54,6 +54,4 @@ Apache, PHP, MySQL(APM)을 이용한 DB 연동 웹 사이트
 **reply_action.php** : 댓글 작성 시 backend에서 작동하는 php 파일   
 **reply_delete_action.php** : 댓글 삭제 시 backend에서 작동하는 php 파일   
    
-   
-기능 도움 : [전승현](https://github.com/jjsh0208)   
 디자인 도움 : [홍가영](https://github.com/kaouo)
