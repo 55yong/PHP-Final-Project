@@ -32,7 +32,7 @@
         <p>
         <form action="" id="chat" name=test method="POST" onsubmit="doit( $('word') );return false;">
           <input type="text" name="word" id="word" class="word" value="" autocomplete=off />
-          <input type="submit" class="button" name="submit" value="전송" />
+          <input type="submit" id="sendBtn" class="button" name="submit" value="전송" />
         </form>
         </p>
       </div>
@@ -46,7 +46,8 @@
     <?php include "footer.php" ?>
   </footer>
 
-  <script type="text/javascript">
+    <script type="text/javascript">
+
     // 제공된 코드 스니펫은 JavaScript로 작성되었으며 실시간 메시징을 위해 Comet(Reverse Ajax) 구현을 설정합니다. 다음은 코드 작동 방식에 대한 설명입니다.
 
     // name의 값을 할당합니다
@@ -55,7 +56,11 @@
     // text매개변수를 받는 doit 함수가 정의 됩니다 . comet.doRequest메서드를 호출하고 매개변수로 name, text.value을 전달합니다.
     function doit(text) {
       comet.doRequest(name, text.value);
+
+      const chatArea = document.getElementById('content');
+      chatArea.scrollTop = chatArea.scrollHeight;
     }
+
 
     // Comet 클래스는 Class.create()를 사용하여 생성됩니다. 이 클래스는 Comet 구현을 처리하기 위한 다양한 메서드와 속성을 정의합니다.
     var Comet = Class.create();
